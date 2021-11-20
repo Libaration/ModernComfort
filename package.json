@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "bodymovin": "^4.13.0",
     "dat.gui": "^0.7.7",
     "next": "latest",
     "react": "^17.0.2",

@@ -67,6 +67,7 @@ export default function Chair(props) {
     renderer.setSize(sizes.width, sizes.height);
     renderer.shadowMap.enabled = true;
     renderer.outputEncoding = THREE.sRGBEncoding;
+    if (document.getElementById('chair_render').children.length > 0) return;
     document.getElementById('chair_render').appendChild(renderer.domElement);
     function animate() {
       controls.update();
