@@ -12,7 +12,7 @@ export default function Chair(props) {
     // const gui = new dat.GUI();
     const sizes = {
       width: window.innerWidth,
-      height: 400,
+      height: 350,
     };
     const scene = new THREE.Scene();
     const loader = new GLTFLoader();

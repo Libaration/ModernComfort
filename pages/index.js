@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
-          className="relative block w-full h-64"
+          className="relative block w-full h-60"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -20,13 +20,15 @@ export default function Home() {
         >
           <path
             d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-            className="fill-current text-gray-200"
+            className="fill-current text-blue-300"
           ></path>
         </svg>
       </div>
       <div className="flex text-center justify-center align-center">
-        <div className="w-48 md:mt-10">
-          Cool description here about all the cool furniture
+        <div className="text-1xl w-48 md:mt-10 max-w-xs max-h-xs z-40 overflow-hidden text-blue-800">
+          "The very best. I will refer everyone I know"
+          <br />
+          <span className="text-xs">- Romy K.</span>
         </div>
       </div>
     </>
