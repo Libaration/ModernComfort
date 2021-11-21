@@ -1,6 +1,6 @@
 import db from '../firebase/clientApp.js';
 import DotLoader from 'react-spinners/DotLoader';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 import { useCollection } from 'react-firebase-hooks/firestore';
 import { useEffect, useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -19,7 +19,6 @@ export default function Testimonials(props) {
     setTestimonials(docs.docs);
   };
   const renderTestimonials = () => {
-    console.log(testimonials);
     return testimonials.map((testimonial, index) => {
       return (
         <div className="text-1xl text-blue-800 h-28 w-full overflow-hidden md:mt-16">
@@ -45,6 +44,7 @@ export default function Testimonials(props) {
           showIndicators={false}
           showThumbs={false}
           centerSlidePercentage={100}
+          showArrows={false}
         >
           {renderTestimonials()}
         </Carousel>
