@@ -79,7 +79,13 @@ export default function Chair(props) {
   return (
     <>
       <div className="flex justify-center align-center">
-        {loading ? <ClipLoader /> : ''}
+        {loading ? (
+          <div className="h-96">
+            <ClipLoader />
+          </div>
+        ) : (
+          ''
+        )}
       </div>
       <div id="chair_render" ref={chairDiv}></div>
     </>
