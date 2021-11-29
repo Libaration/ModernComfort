@@ -40,6 +40,17 @@ export default function Home(props) {
           <Image src="/deliver.gif" width={128} height={128} />
         </div>
       </div>
+      <div className="flex justify-center content-center mt-10">
+        <div className="flex-1 text-center content-center leading-6 pt-10">
+          <Image src="/credit.gif" width={128} height={128} />
+        </div>
+        <div className="flex-1 text-center content-center mt-10 md:pt-0 sm:pt-0 lg:pt-0">
+          <span className="text-3xl">Fast, Easy, Flexible Loans</span>
+          <p />
+          No late fees or compounding interest. At Modern Comfort there are no
+          hidden fees. Instead, you get a simple, easy, transparent way to shop.
+        </div>
+      </div>
     </>
   );
 }
